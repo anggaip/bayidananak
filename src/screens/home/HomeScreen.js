@@ -12,7 +12,7 @@ const HomeScreen = (props) => {
     <View style={styles.container}>
       <Text>This is Home</Text>
       <Button
-        title='Push Settings Screen'
+        title='Push Weight Chart Screen'
         color='#710ce3'
         onPress={() => navigateToSetting(props)}
       />
@@ -23,11 +23,11 @@ const HomeScreen = (props) => {
 const navigateToSetting = (props) => {
   Navigation.push(props.componentId, {
     component: {
-      name: 'Settings',
+      name: 'WeightChart',
       options: {
         topBar: {
           title: {
-            text: 'Settings'
+            text: 'Weight Chart'
           }
         }
       }
