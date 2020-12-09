@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "devAndroid": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -11,7 +12,8 @@
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-navigation": "7.5.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
